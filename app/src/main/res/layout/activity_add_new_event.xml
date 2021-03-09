@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/EventsGreen"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:text="@string/CreateEvent"
+        android:layout_marginBottom="5dp"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:layout_marginTop="20dp"
+        android:scrollHorizontally="false"
+        android:scrollbars="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:inputType="text"
+            android:hint="@string/title"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/btn_date"
+            android:focusableInTouchMode="false"
+            android:layout_width="match_parent"
+            android:inputType="date"
+            android:layout_height="wrap_content"
+            android:hint="@string/date"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="false"
+            android:inputType="time"
+            android:hint="@string/start"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/btn_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:focusableInTouchMode="false"
+            android:hint="@string/end"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:inputType="text"
+                android:hint="@string/location"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="159dp"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/geolocation_latitude"
+                    android:layout_width="159dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/geolocation_latitude"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/geolocation_longitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/geolocation_longitude"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/txt_shortDescription"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:hint="Short Description"
+                android:minLines="2"
+                android:scrollHorizontally="false"
+                android:scrollbars="vertical"
+                android:layout_marginBottom="20dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/txt_description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|start"
+        android:inputType="textMultiLine"
+        android:lines="20"
+        android:hint="@string/description"
+        android:minLines="4"
+        android:scrollHorizontally="false"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="30dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- <TextView
+            android:id="@+id/LabelAttachments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="start"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:text="@string/Attachments"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20px">
+
+            <ImageView
+                android:id="@+id/browse_image"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:contentDescription="@string/ImagePath"
+                app:srcCompat="@drawable/image"
+                android:layout_gravity="center_vertical" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+
+            <EditText
+                android:id="@+id/image_path"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80px"
+                android:layout_marginLeft="80px"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:hint="@string/ImagePath"
+                android:layout_marginRight="110px"
+                android:layout_marginEnd="110px"
+                android:inputType="text"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/btn_DeleteImageAttachment"
+                android:layout_width="wrap_content"
+                android:contentDescription="@string/Delete"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:src="@android:drawable/ic_menu_delete" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20px">
+
+
+            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:id="@+id/import_video">
+
+
+                <VideoView
+                    android:id="@+id/browse_video"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_gravity="center" />
+
+                <ImageView
+                    android:id="@+id/imageViewVideo"
+                    android:layout_width="100px"
+                    android:contentDescription="@string/VideoPath"
+                    android:layout_height="100px"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/video" />
+
+
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+
+            <EditText
+                android:id="@+id/video_path"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="110px"
+                android:layout_marginEnd="110px"
+                android:layout_marginStart="80px"
+                android:layout_marginLeft="80px"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:hint="@string/VideoPath"
+                android:inputType="text"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/btn_DeleteVideoAttachment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/Delete"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:src="@android:drawable/ic_menu_delete" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+-->
+    <Button
+        android:id="@+id/submitEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:background="@color/EventsGreen"
+        android:paddingRight="20dp"
+        android:text="@string/Save"></Button>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

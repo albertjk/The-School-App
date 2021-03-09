@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name ="EventsGreen">#764CAF50</color>
+    <color name ="BasicEvents">#764CAF50</color>
+    <color name="BackgroundMenus">#26CDDC39</color>
+    <color name="backgroundColour">#26CDDC39</color>
+
+</resources>

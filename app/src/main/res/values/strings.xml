@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">School App</string>
+    <string name="school_app">School App</string>
+    <string name="log_in_button_text">Log In</string>
+    <string name="sign_up_button_text">Sign Up</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_email">Not a valid e-mail address</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >8 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="view_profile">"View Profile"</string>
+    <string name="view_Kidsprofile">"View my kid's profile"</string>
+    <string name="notifications">"Notice Board"</string>
+    <string name="manage_Notifications">"Manage Notifications"</string>
+    <string name="events">"Events"</string>
+    <string name="manage_Events">"Manage Events"</string>
+    <string name="communication">"Communications from the school"</string>
+    <string name="communication_parents">"Communicate with parents"</string>
+    <string name="manage_StudentDetails">"Manage Student Details</string>
+    <string name="forgotten_password">Forgotten password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="enter_a_password_minimum_requirements">Enter a password. It must be at least 5 characters long, containing at least 1 uppercase, 1 lowercase, 1 digit, and 1 special character.</string>
+    <string name="enter_it_again_the_two_passwords_must_match">Enter it again. The two passwords must match.</string>
+    <string name="notificationsTitle">Notifications</string>
+    <string name="notification_title">Notification title</string>
+    <string name="communication_title">Communication title</string>
+    <string name="title">Title</string>
+    <string name="location">Location</string>
+    <string name="start">Starting Time</string>
+    <string name="date">Date</string>
+    <string name="end">Ending Time</string>
+    <string name="description">Description</string>
+    <string name="Save">Save</string>
+    <string name="EventsCapital">EVENTS</string>
+    <string name="CreateEvent">CREATE EVENT</string>
+
+    <string name="VideoPath"> Select Video Path</string>
+    <string name="ImagePath"> Select Image Path</string>
+    <string name="Attachments">Import attachments for the event</string>
+    <string name="Delete">Delete</string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="signup">Sign Up</string>
+
+    <string name="sign_up_activity_title_text">Sign Up</string>
+    <string name="sign_up_activity_explanation_text">Select the type of profile to create</string>
+    <string name="sign_up_activity_title_student_text">Student Sign Up</string>
+    <string name="sign_up_activity_title_parent_text">Parent Sign Up</string>
+
+    <string name="backspace_symbol">⌫</string>
+    <string name="geolocation_latitude">Latitude</string>
+    <string name="geolocation_longitude">Longitude</string>
+    <string name="log_in_textview_text">Log In</string>
+    <string name="add_student_button_text">Add Student</string>
+
+</resources>

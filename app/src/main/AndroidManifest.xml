@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.schoolapp">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="" />
+        <activity android:name=".LocationMapsActivity" />
+        <activity android:name=".EditStudent"
+            android:parentActivityName=".ManageStudentActivity"/>
+        <activity android:name=".AddStudentActivity"
+            android:parentActivityName=".ManageStudentActivity"/>
+        <activity
+            android:name=".StudentProfileActivity" />
+        <activity android:name=".AdminHomeActivity" />
+        <activity android:name=".ManageStudentActivity"
+            android:parentActivityName=".AdminHomeActivity"/>
+        <activity android:name=".ManageNotificationActivity"
+            android:parentActivityName=".AdminHomeActivity"/>
+        <activity android:name=".AddNotificationActivity"
+            android:parentActivityName=".ManageNotificationActivity"/>
+        <activity android:name=".AddNewEventActivity"
+            android:parentActivityName=".EventsActivity"/>
+        <activity android:name=".ParentsHomeActivity" />
+        <activity android:name=".StudentHomeActivity" />
+        <activity android:name=".CommunicationParentsActivity" />
+        <activity
+            android:name=".SignUpActivityPart2"
+            android:parentActivityName=".SignUpActivityPart1" />
+        <activity
+            android:name=".SignUpActivityPart1"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SendCommunicationsActivityPart2"
+            android:parentActivityName=".SendCommunicationsActivityPart1" />
+        <activity
+            android:name=".SendCommunicationsActivityPart1"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".NotificationsActivity" />
+        <activity android:name=".EventsActivity" />
+        <activity android:name=".EventsAdapter"/>
+        <activity
+            android:name=".ForgottenPasswordActivity"
+            android:screenOrientation="locked"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:parentActivityName=".ForgottenPasswordActivity"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
