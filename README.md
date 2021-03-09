@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the code for The School App I developed in a team working together with Christina Shiamma and Tien Yu Lo in spring 2020 while studying at the University of Southampton. The aim of this project was to develop a mobile application to provide a platform for simple and convenient communication between a school, its students and their parents. The goal was to develop a native Android application, which provides an interactive environment, enabling the school administrator to provide updates on various events and activities to both the students and their parents.
+This repository contains the code for The School App I developed in a team working together with [Christina Shiamma](https://github.com/cshiam02) and [Tien-Yu Lo](https://github.com/yoyo27429) in May 2020 while studying at the University of Southampton. The aim of this project was to develop a mobile application to provide a platform for simple and convenient communication between a school, its students and their parents. The goal was to develop a native Android application, which provides an interactive environment, enabling the school administrator to provide updates on various events and activities to both the students and their parents.
 
 ## Features
 
